@@ -1,8 +1,9 @@
 const User = require("../model/User");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+require('dotenv').config()
 
-const jwtSecret = "Put Token Here";
+const jwtSecret = process.env.JSON_WT;
 exports.register = async (req, res, next) => {
   const { username, password } = req.body;
   if (password.length < 6) {
