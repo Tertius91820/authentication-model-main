@@ -1,9 +1,11 @@
 const Mongoose = require("mongoose")
-const RemoteDB = `Connection String Goes Here`
+const RemoteDB = process.env.DB_CONNECTION
 const connectDB = async () => {
-  Mongoose.connect(RemoteDB)
-  .then(client => {
-    console.log("MongoDB Connected")
-  })
+  Mongoose.connect(
+    RemoteDB, 
+    { useNewUrlParser: true }, 
+    () => {console.log("Connected to db!");}
+  )
 }
+
 module.exports = connectDB

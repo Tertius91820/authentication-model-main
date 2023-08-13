@@ -15,10 +15,18 @@
     "dotenv": "^16.0.1",
     "ejs": "^3.1.8",
     "express": "^4.18.1",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.1",
     "mongoclient": "^1.0.3",
     "mongodb": "^4.7.0",
     "mongoose": "^6.4.3",
-    "nodemon": "^2.0.19"
-  }
+    "nodemon": "^3.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tertius91820/authentication-model-main.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Tertius91820/authentication-model-main/issues"
+  },
+  "homepage": "https://github.com/Tertius91820/authentication-model-main#readme"
 }
