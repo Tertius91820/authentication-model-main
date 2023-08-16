@@ -15,7 +15,7 @@ exports.register = async (req, res, next) => {
       password: hash,
     })
       .then((user) => {
-        const maxAge = 3 * 60 * 60;
+        const maxAge = 3 * 60 * 60;// max 3hours
         const token = jwt.sign(
           { id: user._id, username, role: user.role },
           jwtSecret,
